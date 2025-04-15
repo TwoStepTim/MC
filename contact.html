@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Macon County</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Macon County</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <!-- Departments Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="departments.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Departments
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="departments.html">All Departments</a></li>
+              <li><a class="dropdown-item" href="public-health.html">Public Health</a></li>
+              <li><a class="dropdown-item" href="permits-inspections.html">Permits & Inspections</a></li>
+              <li><a class="dropdown-item" href="parks-recreation.html">Parks & Recreation</a></li>
+              <li><a class="dropdown-item" href="emergency-services.html">Emergency Services</a></li>
+            </ul>
+          </li>
+  
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="licenses-forms.html">Licenses & Forms</a></li>
+              <li><a class="dropdown-item" href="apply-permit.html">Apply for Permits</a></li>
+              <li><a class="dropdown-item" href="public-records.html">Public Records</a></li>
+              <li><a class="dropdown-item" href="pay-taxes.html">Pay Taxes</a></li>
+            </ul>
+          </li>
+  
+          <!-- Static Links -->
+          <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      <!-- Page Title -->
+      <div class="text-center mb-5">
+        <h1 class="page-title mb-3">Contact Macon County</h1>
+        <p class="lead">We're here to help. Reach out with questions about services, departments, permits, or general info.</p>
+      </div>
+  
+      <!-- Contact Info & Form -->
+      <div class="row g-5 align-items-start">
+        <!-- Contact Info Block -->
+        <div class="col-md-5">
+          <div class="p-4 bg-light rounded shadow-sm">
+            <h5 style="color: var(--primary-color);">Main Office</h5>
+            <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> 123 Government Drive<br>Franklin, NC 28734</p>
+            <p class="mb-1"><i class="bi bi-telephone-fill"></i> (828) 555-1234</p>
+            <p class="mb-3"><i class="bi bi-envelope-fill"></i> <a href="mailto:info@maconnc.org">info@maconnc.org</a></p>
+            <hr>
+            <h6>Office Hours</h6>
+            <p class="mb-0">Monday – Friday<br>8:00 AM – 5:00 PM</p>
+          </div>
+  
+          <!-- Optional Help Block -->
+          <div class="mt-4 p-4 bg-white border rounded shadow-sm">
+            <h6 style="color: var(--primary-color);">Need help fast?</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a href="services.html">Explore County Services</a></li>
+              <li><a href="departments.html">View All Departments</a></li>
+              <li><a href="faq.html">See Frequently Asked Questions</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <div class="p-4 bg-white border rounded shadow-sm">
+            <h5 class="mb-4">Send a Message</h5>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="topic" class="form-label">Subject or Department</label>
+                <select class="form-select" id="topic" required>
+                  <option value="">Choose an option...</option>
+                  <option value="permits">Permits & Inspections</option>
+                  <option value="records">Public Records</option>
+                  <option value="parks">Parks & Recreation</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" class="form-control" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p>&copy; 2025 Macon County, NC. All rights reserved.</p>
+      <p class="mb-0"><a href="#" class="text-white text-decoration-underline">Accessibility</a> | <a href="#" class="text-white text-decoration-underline">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

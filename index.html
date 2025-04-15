@@ -34,22 +34,52 @@
   </div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">Macon County</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand" href="index.html">Macon County</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+  
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Residents</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Visitors</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <!-- Departments Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="departments.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Departments
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="departments.html">All Departments</a></li>
+              <li><a class="dropdown-item" href="public-health.html">Public Health</a></li>
+              <li><a class="dropdown-item" href="permits-inspections.html">Permits & Inspections</a></li>
+              <li><a class="dropdown-item" href="parks-recreation.html">Parks & Recreation</a></li>
+              <li><a class="dropdown-item" href="emergency-services.html">Emergency Services</a></li>
+            </ul>
+          </li>
+  
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="licenses-forms.html">Licenses & Forms</a></li>
+              <li><a class="dropdown-item" href="apply-permit.html">Apply for Permits</a></li>
+              <li><a class="dropdown-item" href="public-records.html">Public Records</a></li>
+              <li><a class="dropdown-item" href="pay-taxes.html">Pay Taxes</a></li>
+            </ul>
+          </li>
+  
+          <!-- Static Links -->
+          <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  
 
  <!-- Featured News Slider -->
 <section class="py-5 bg-light">
