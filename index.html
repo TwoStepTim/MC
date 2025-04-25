@@ -24,7 +24,7 @@
       text-decoration: underline;
     }
   </style>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
 
@@ -41,7 +41,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="mock-macon-county-north-carolina.png" alt="Macon County Seal" height="50" />
+        <img src="images/mock-macon-county-north-carolina.png" alt="Macon County Seal" height="50" />
         <span>Macon County</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
@@ -56,7 +56,7 @@
               Departments
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="template.html">All Departments</a></li>
+              <li><a class="dropdown-item" href="departments.html">All Departments</a></li>
               <li><a class="dropdown-item" href="template.html">Public Health</a></li>
               <li><a class="dropdown-item" href="template.html">Permits & Inspections</a></li>
               <li><a class="dropdown-item" href="template.html">Parks & Recreation</a></li>
@@ -70,8 +70,8 @@
               Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="template.html">All Services</a></li>
-              <li><a class="dropdown-item" href="ltemplate.html">Licenses & Forms</a></li>
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="template.html">Licenses & Forms</a></li>
               <li><a class="dropdown-item" href="template.html">Apply for Permits</a></li>
               <li><a class="dropdown-item" href="template.html">Public Records</a></li>
               <li><a class="dropdown-item" href="template.html">Pay Taxes</a></li>
@@ -187,7 +187,7 @@
   <section class="py-5">
     <div class="container">
       <div class="card shadow-sm">
-        <img src="https://via.placeholder.com/900x300?text=Macon+County" alt="About Macon County" class="img-fluid rounded mb-3">
+        <img src="images/homepage.jpg" alt="Macon County country side with small house" class="img-fluid rounded mb-3 MCImage">
 
         <div class="card-body">
           <h3 class="card-title mb-3">Welcome to MaconNC.org</h3>
@@ -283,14 +283,40 @@
   
   
   <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>&copy; 2025 Macon County, NC. All rights reserved.</p>
-      <p>
-        <a href="#" class="text-white">Accessibility Statement</a> | 
-        <a href="#" class="text-white">Privacy Policy</a> |
-        <a href="#" class="text-white">Contact Us</a>
-      </p>
+  <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Left: Logo & Address -->
+        <div class="col-md-6 mb-3">
+          <div class="d-flex align-items-center mb-2">
+            <img src="images/mock-macon-county-north-carolina.png" alt="Macon County Seal" height="90" class="me-2">
+            <h6 class="mb-0">Macon County, NC</h6>
+          </div>
+          <p class="mb-1">123 Government Drive, Franklin, NC 28734</p>
+          <p class="mb-0"><i class="bi bi-telephone-fill"></i> (828) 555-1234</p>
+          <p><i class="bi bi-envelope-fill"></i> <a href="mailto:info@maconnc.org" class="text-white text-decoration-underline">info@maconnc.org</a></p>
+        </div>
+  
+        <!-- Right: Navigation Links -->
+        <div class="col-md-6 text-md-end">
+          <ul class="list-unstyled">
+            <li><a href="departments.html" class="text-white text-decoration-underline">Departments</a></li>
+            <li><a href="services.html" class="text-white text-decoration-underline">Services</a></li>
+            <li><a href="news.html" class="text-white text-decoration-underline">News & Events</a></li>
+            <li><a href="about.html" class="text-white text-decoration-underline">About</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-underline">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <hr class="border-light" />
+  
+      <!-- Bottom Note -->
+      <div class="text-center small">
+        <p class="mb-1">&copy; 2025 Macon County Government. All rights reserved.</p>
+        <p class="mb-0">All imagery used throughout the site is sourced via iStockPhoto and used under appropriate licensing.</p>
+      </div>
     </div>
   </footer>
 
